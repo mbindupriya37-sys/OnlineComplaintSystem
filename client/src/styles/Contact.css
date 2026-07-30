@@ -1,0 +1,252 @@
+/* =========================================
+   CONTACT PAGE
+========================================= */
+
+.contact-page {
+  width: min(1180px, 94%);
+  margin: 0 auto;
+  padding: 48px 0 80px;
+}
+
+/* HEADER */
+
+.contact-header {
+  padding: 34px 38px;
+  margin-bottom: 28px;
+
+  color: #ffffff;
+
+  background:
+    radial-gradient(
+      circle at 90% 12%,
+      rgba(255, 255, 255, 0.14),
+      transparent 28%
+    ),
+    linear-gradient(135deg, #073b77, #0a67af);
+
+  border-radius: 24px;
+  box-shadow: 0 22px 50px rgba(7, 59, 119, 0.22);
+}
+
+.contact-eyebrow {
+  margin: 0 0 9px;
+
+  color: #bfe1ff;
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.contact-header h1 {
+  margin: 0 0 10px;
+
+  color: #ffffff;
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  line-height: 1.08;
+}
+
+.contact-header > p:last-child {
+  max-width: 720px;
+  margin: 0;
+
+  color: #deefff;
+  line-height: 1.7;
+}
+
+/* MAIN CONTENT */
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 28px;
+  align-items: start;
+}
+
+/* CONTACT INFO */
+
+.contact-information {
+  display: grid;
+  gap: 16px;
+}
+
+.contact-info-card {
+  padding: 20px;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+
+  background: #ffffff;
+  border: 1px solid #dfeaf4;
+  border-radius: 16px;
+
+  box-shadow: 0 12px 28px rgba(39, 73, 105, 0.08);
+}
+
+.contact-info-card > span {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+
+  display: grid;
+  place-items: center;
+
+  background: #eaf3ff;
+  border-radius: 50%;
+
+  font-size: 1.4rem;
+}
+
+.contact-info-card h3 {
+  margin: 0 0 5px;
+
+  color: #173b63;
+  font-size: 1rem;
+}
+
+.contact-info-card p {
+  margin: 0;
+
+  color: #6d7d91;
+  line-height: 1.6;
+}
+
+/* CONTACT FORM */
+
+.contact-form {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 28px !important;
+
+  background: #ffffff;
+  border: 1px solid #dfeaf4;
+  border-radius: 20px;
+
+  box-shadow: 0 15px 36px rgba(39, 73, 105, 0.09);
+}
+
+.contact-form-heading {
+  padding-bottom: 20px;
+  margin-bottom: 22px;
+
+  border-bottom: 1px solid #e6eef6;
+}
+
+.contact-form-heading h2 {
+  margin: 0 0 6px;
+
+  color: #173b63;
+  text-align: left !important;
+}
+
+.contact-form-heading p {
+  margin: 0;
+
+  color: #748397;
+}
+
+.contact-form-group {
+  margin-bottom: 18px;
+}
+
+.contact-form-group label {
+  display: block;
+  margin-bottom: 7px;
+
+  color: #314861;
+  font-size: 0.9rem;
+  font-weight: 750;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin: 0 !important;
+  padding: 13px 14px;
+
+  color: #1f2937;
+  background: #fbfdff;
+
+  border: 1px solid #cbd8e5;
+  border-radius: 10px;
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.contact-form textarea {
+  min-height: 140px;
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background: #ffffff;
+  border-color: #2375bd;
+
+  box-shadow: 0 0 0 4px rgba(35, 117, 189, 0.11);
+}
+
+.contact-message {
+  margin-bottom: 16px;
+  padding: 13px 15px;
+
+  color: #0b7047;
+  background: #eaf9f1;
+
+  border: 1px solid #bee8d2;
+  border-radius: 10px;
+
+  font-weight: 700;
+  text-align: center;
+}
+
+.contact-submit-button {
+  width: 100%;
+  margin: 0;
+
+  padding: 13px 20px;
+
+  color: #ffffff;
+  background: linear-gradient(135deg, #1769c2, #0b559e);
+
+  border-radius: 10px;
+
+  font-weight: 800;
+
+  box-shadow: 0 11px 23px rgba(23, 105, 194, 0.22);
+}
+
+.contact-submit-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 30px rgba(23, 105, 194, 0.3);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .contact-page {
+    width: 92%;
+    padding-top: 30px;
+  }
+
+  .contact-header {
+    padding: 28px 23px;
+    border-radius: 19px;
+  }
+
+  .contact-form {
+    padding: 22px 17px !important;
+  }
+}
